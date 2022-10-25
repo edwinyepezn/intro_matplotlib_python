@@ -29,7 +29,13 @@ if __name__ == '__main__':
     # utilizando "x" e "y" ya disponible
 
     # Colocar la leyenda y el label con el nombre de la función
-
+    fig = plt.figure()
+    fig.suptitle('Funcion Tangente Hiperbolica', fontsize=16)
+    ax1 = fig.add_subplot(1, 2, 1)  # 1 fila, 2 columnas, axes nº1
+    ax1.scatter(x, y, c='darkgreen')
+    ax1.legend()
+    ax1.grid()
+    plt.show()
     # Elegir un marker a elección
 
     # Crear acá su gráfico

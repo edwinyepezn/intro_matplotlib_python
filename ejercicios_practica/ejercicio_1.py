@@ -34,5 +34,12 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Gráfico de la función', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y, c='darkgreen', label='ECUACION')
+    ax.legend()
+    ax.grid()
+    plt.show()
     print("terminamos")

@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # y2 = x**3
 
     # Su implementación ya está disponible, es la siguiente:
-    x = list(np.linspace(-4, 4, 20))
+    x = list(np.linspace(-1, 1, 100))
 
     y1 = []
     for i in x:
@@ -45,5 +45,15 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Gráfico de las funciónes', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y1, c='darkgreen', label='ECUACION 1 y=x**2')
+    ax.plot(x, y2, c='darkgreen', label='ECUACION 2 y=x**3')
+    ax.legend()
+    ax.grid()
+    plt.show()
     print("terminamos")
+
+   
